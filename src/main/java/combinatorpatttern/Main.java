@@ -11,7 +11,7 @@ public class Main {
                 "Alice",
                 "alice@gmail.com",
                 "+0898787879878",
-                LocalDate.of(2015, 1,1)
+                LocalDate.of(2000, 1,1)
         );
 
 //        System.out.println(new CustomerValidatorService().isValid(customer));

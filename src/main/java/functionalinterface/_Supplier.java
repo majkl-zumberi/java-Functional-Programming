@@ -1,5 +1,6 @@
 package functionalinterface;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -15,7 +16,7 @@ public class _Supplier {
     }
 
     static Supplier<List<String>> getDBConnectionUrlsSupplier = ()
-            -> List.of(
+            -> Arrays.asList(
             "jdbc://localhost:5432/users",
             "jdbc://localhost:5432/customer");
 

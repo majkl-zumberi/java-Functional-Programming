@@ -1,15 +1,17 @@
 package imperative;
 
+import static imperative.Main.Gender.FEMALE;
+import static imperative.Main.Gender.MALE;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import static imperative.Main.Gender.*;
-
 public class Main {
     public static void main(String[] args) {
-        List<Person> people = List.of(
+        List<Person> people = Arrays.asList(
             new Person("John", MALE),
             new Person("Maria", FEMALE),
             new Person("Aisha", FEMALE),

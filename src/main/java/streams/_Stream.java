@@ -1,20 +1,17 @@
 package streams;
 
-import java.util.List;
-import java.util.Set;
-import java.util.function.Function;
-import java.util.function.IntConsumer;
-import java.util.function.Predicate;
-import java.util.function.ToIntFunction;
-import java.util.stream.Collectors;
+import static streams._Stream.Gender.FEMALE;
+import static streams._Stream.Gender.MALE;
+import static streams._Stream.Gender.PREFER_NOT_TO_SAY;
 
-import static streams._Stream.Gender.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class _Stream {
 
     public static void main(String[] args) {
 
-        List<Person> people = List.of(
+        List<Person> people = Arrays.asList(
                 new Person("John", MALE),
                 new Person("Maria", FEMALE),
                 new Person("Aisha", FEMALE),

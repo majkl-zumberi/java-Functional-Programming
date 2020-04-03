@@ -14,7 +14,7 @@ public class Lambdas {
         BiFunction<String, Integer, String> upperCaseName = (name, age) -> {
             int counter = 0;
             // logic
-            if (name.isBlank()) throw new IllegalArgumentException("");
+            if (name.equals("")) throw new IllegalArgumentException("");
             System.out.println(age);
             return name.toUpperCase();
         };
